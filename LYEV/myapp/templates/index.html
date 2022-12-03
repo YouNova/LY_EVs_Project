@@ -3,20 +3,16 @@
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
-    <title>EVD Shopping Page</title>  
+    <title>EVD</title>  
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/34/34627.png" type="image/icon path"/>  
     <link rel="stylesheet" href="{% static 'index.css' %}"/>  
+    <link rel="stylesheet" href="{% static 'navBar.css' %}"/>  
 </head>  
 <body style="margin: 0;">  
-    <div class="topnav">  
-        <a class="active" href="/">Home</a>  
-        <a href="/shop">Shop</a>  
-        <a href="/sale">Sale</a>  
-        <a href="/contactUs">Contact Us</a>  
-        <input type="input" class="search" name="seach" placeholder="Search"/>  
-        <a href="/search">Search</a>  
-        <a href="/logIn" style="float: right;">Log In</a>  
+    <div class="navBar">  
+        {% include "navBar.html" %}  
     </div>  
     <div class="productArea">  
     </div>  
+</body>  
 </html>  

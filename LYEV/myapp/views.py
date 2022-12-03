@@ -8,6 +8,6 @@ def index(request):
     template = loader.get_template('index.html') # our template
     return HttpResponse(template.render())  # rendering template in HttpResponse
     
-def logIn(request):
-    template = loader.get_template('logIn.html') # our template
+def signIn(request):
+    template = loader.get_template('signIn.html') # our template
     return HttpResponse(template.render())  # rendering template in HttpResponse
