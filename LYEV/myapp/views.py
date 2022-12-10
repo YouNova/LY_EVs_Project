@@ -11,3 +11,7 @@ def index(request):
 def signIn(request):
     template = loader.get_template('signIn.html') # our template
     return HttpResponse(template.render())  # rendering template in HttpResponse
+    
+def signUp(request):
+    template = loader.get_template('signUp.html') # our template
+    return HttpResponse(template.render())  # rendering template in HttpResponse
