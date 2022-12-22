@@ -8,6 +8,10 @@
         <a href="/contactUs">Contact Us</a>  
         <input type="input" class="search" name="seach" placeholder="Search"/>  
         <a href="/search">Search</a>  
+        {% if 'user_email' in request.session %}  
         <a href="/signIn" style="float: right;">Sign In</a>  
+        {% else %}  
+        <a href="/logOut" style="float: right;">Log Out</a>  
+        {% endif %}  
     </div>  
 </body>

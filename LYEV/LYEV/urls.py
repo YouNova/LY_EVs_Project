@@ -26,4 +26,5 @@ urlpatterns = [
     path('contactUs/', views.index),
     path('shop/', views.index),
     path('sale/', views.index),
+    path('logOut/', views.logOut),
 ]
