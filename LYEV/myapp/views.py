@@ -40,9 +40,6 @@ def logOut(request):
         for key, value in request.session.items():
             print('{} => {}'.format(key, value))
         del request.session['user_email']
-        print("After delete:\n")
-        for key, value in request.session.items():
-            print('{} => {}'.format(key, value))
         return redirect("/") # redirect to index page after successful log out
     else:
         for key, value in request.session.items():
