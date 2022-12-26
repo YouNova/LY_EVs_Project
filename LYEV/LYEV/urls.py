@@ -17,14 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from myapp import views
 
+app_name = "myapp" 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
     path('', views.index),
-    path('signIn/', views.signIn),
-    path('signUp/', views.signUp),
+    path('signin/', views.signin),
+    path('signup/', views.signup),
     path('contactUs/', views.index),
     path('shop/', views.index),
     path('sale/', views.index),
-    path('logOut/', views.logOut),
+    path('logout/', views.logout_view),
 ]
